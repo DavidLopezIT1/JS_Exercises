@@ -103,7 +103,7 @@ function absoluteV() {
 }
 
 function random(param1,paraM2){   
-    let resultRan= Math.random() * paraM2 - param1 + param1;
+    let resultRan= Math.abs(Math.round(Math.random() * paraM2 - param1 + param1));
     return resultRan;
 }
 
@@ -114,11 +114,6 @@ function retornRandom(){
     let ResultOpRandom = random(input1Ran.value, input2Ran.value);
     textRandom.textContent = ResultOpRandom;
  
-}
-
-function round(){
-    let textRandom = document.getElementById('AleatorioResult').value;
-
 }
 
 
