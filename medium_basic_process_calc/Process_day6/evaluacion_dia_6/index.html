@@ -26,34 +26,44 @@
     </div>
 
     <div><br>
-        <button>Matematicas</button>
-        <button>Sociales</button>
-        <button>Español</button>
-        <button>Ingles</button>
-        <button>Biología</button>
-        <button>Filosofía</button>
-        <button>Química</button>
+        <button  onclick="functionmatem()"   id="Matematicas">  Matematicas </button>
+        <button  onclick="functionsocial()"  id="Sociales"> Sociales </button>
+        <button  onclick="functionespan()"   id="Español">  Español </button>
+        <button  onclick="functioningles()"  id="Ingles"> Ingles </button>
+        <button  onclick="functionbiologia()"id="Biología"> Biología </button>
+        <button  onclick="functionfiloso()"  id="Filosofía"> Filosofía </button>
+        <button  onclick="functionquimica()" id="Química"> Química </button>
     </div><br>
 
     <div>
-        <button>Todas</button>
+        <span>Materias Generales</span><br><br>
+        <input type="checkbox" onclick="Todas()"> <span id="Todas">Todas</span><br><br>
+        
+        <ul id="ordenatedList">
+
+            
+        </ul>
         
     </div>
 
     <div>
-        <h3>Promedio:</h3>
-        <h4 id="promedioRes"></h4>
+        <button onclick="promedio()">Generar Promedio</button><br><br>
+        <span id="answerP"></span><br><br>
     </div>
 
     <div>
 
-        <h3>¿Materias a Aplazar?</h3> <h3 id="materias_a_aplazar"></h3>
+        <input type="checkbox" onclick="mostHighNote()">Conocer calificación mas Alta<br><br>
+        <h3 id="mostHighNoteL"></h3><br><br>
+
+        <input type="checkbox" onclick="materiasAplazadas()">¿Materias a Aplazar?<br><br>
+        <h3 id="materias_a_aplazar"></h3><br>
+        
 
     </div>
 
     <div>
 
-        <h3 id="cuantas"></h3> <h3 id="materias_a_aplazar2"></h3>
 
     </div>
 
